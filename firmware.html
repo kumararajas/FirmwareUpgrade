@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmware Upgrade</title>
+  <link rel="stylesheet" href="firmware.css">
+</head>
+<body>
+  <div class="fw-container">
+    <h1>Firmware Upgrade</h1>
+    <form id="fw-form">
+      <label for="fw-file" class="fw-label">Select Firmware File (.bin, .hex):</label>
+      <input type="file" id="fw-file" accept=".bin,.hex" required>
+      <button type="submit" class="fw-btn">Upload & Upgrade</button>
+    </form>
+    <div id="fw-status" class="fw-status"></div>
+    <div id="fw-progress-bar" class="fw-progress-bar" style="display:none;">
+      <div id="fw-progress" class="fw-progress"></div>
+    </div>
+  </div>
+  <script src="firmware.js"></script>
+</body>
+</html>
